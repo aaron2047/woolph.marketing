@@ -511,6 +511,13 @@ section {
   border-color: var(--accent);
 }
 
+.project-link-muted,
+.project-link-muted:hover {
+  color: var(--mid);
+  border-color: var(--rule);
+  cursor: default;
+}
+
 .project-link svg {
   transition: transform var(--fast);
 }
