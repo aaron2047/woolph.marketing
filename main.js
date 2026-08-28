@@ -90,6 +90,13 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
+      /* The form carries `novalidate`, so the browser's own checks never run.
+         Without this the required fields are inert and a blank form submits. */
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
       const btn = form.querySelector('.btn-submit');
       const originalText = btn.innerHTML;
 
