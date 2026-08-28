@@ -714,7 +714,7 @@ section {
 .about-portrait {
   display: block;
   width: 100%;
-  max-width: 420px;
+  max-width: 210px;
   height: auto;
   margin-bottom: 2rem;
 }
