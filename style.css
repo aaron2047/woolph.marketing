@@ -709,6 +709,16 @@ section {
 
 .about-right {}
 
+/* Cut out against the section's own ink ground, so it needs no frame —
+   the shoulders simply dissolve into the background. */
+.about-portrait {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
 .about-tagline {
   font-size: clamp(1rem, 1.5vw, 1.2rem);
   color: rgba(250,250,248,0.75);
