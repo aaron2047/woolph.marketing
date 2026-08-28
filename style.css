@@ -443,13 +443,14 @@ section {
 
 .project-card.secondary .project-visual,
 .project-card.tertiary .project-visual {
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
 }
 
 /* Project visual backgrounds — each unique */
 .pv-bullforce  { background: linear-gradient(135deg, #0a1628 0%, #1a3a6e 60%, #0d2244 100%); }
 .pv-expat     { background: linear-gradient(135deg, #1c2f1e 0%, #2d5033 60%, #1a4020 100%); }
 .pv-nonprofit { background: linear-gradient(135deg, #1e1240 0%, #3a1f6e 60%, #281050 100%); }
+.pv-darkchild { background: linear-gradient(135deg, #1a1206 0%, #3a2a12 60%, #150f06 100%); }
 .pv-philly    { background: linear-gradient(135deg, #1a1208 0%, #3d2c0a 60%, #2a1c06 100%); }
 
 /* Cards carrying real artwork. The image sits under .project-badge, which
@@ -466,6 +467,11 @@ section {
 /* The gold-on-gold badge relies on the dark gradient behind it. Over a
    photograph that contrast is not guaranteed, so image cards get a solid
    ground for the chip instead. */
+.project-visual.has-image .project-result {
+  background: rgba(14, 14, 14, 0.82);
+  border-color: rgba(200, 169, 110, 0.45);
+}
+
 .project-visual.has-image .project-badge {
   background: rgba(14, 14, 14, 0.82);
   border-color: rgba(200, 169, 110, 0.45);
