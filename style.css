@@ -452,6 +452,25 @@ section {
 .pv-nonprofit { background: linear-gradient(135deg, #1e1240 0%, #3a1f6e 60%, #281050 100%); }
 .pv-philly    { background: linear-gradient(135deg, #1a1208 0%, #3d2c0a 60%, #2a1c06 100%); }
 
+/* Cards carrying real artwork. The image sits under .project-badge, which
+   follows it in the DOM and so stays on top. */
+.project-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* The gold-on-gold badge relies on the dark gradient behind it. Over a
+   photograph that contrast is not guaranteed, so image cards get a solid
+   ground for the chip instead. */
+.project-visual.has-image .project-badge {
+  background: rgba(14, 14, 14, 0.82);
+  border-color: rgba(200, 169, 110, 0.45);
+}
+
 .project-visual-inner {
   position: absolute;
   inset: 0;
