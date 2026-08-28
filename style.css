@@ -233,22 +233,68 @@ section {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 60% 80% at 90% 20%, rgba(200,169,110,0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(200,169,110,0.04) 0%, transparent 60%);
+  z-index: 0;
   pointer-events: none;
+}
+
+/* Orthographic globe with great-circle routes out of Philadelphia.
+   Vector, so it stays sharp at any density; the artwork carries its own
+   gold wash, which is why the old radial gradients came out. */
+.hero-bg svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Paper washes back in toward the lower left, where the headline, subhead and
+   buttons sit. The globe is anchored upper right, so it stays untouched while
+   the copy always reads against a near-solid ground. */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top right,
+    rgba(250, 250, 248, 1) 0%,
+    rgba(250, 250, 248, 0.94) 24%,
+    rgba(250, 250, 248, 0.62) 44%,
+    rgba(250, 250, 248, 0) 66%
+  );
+}
+
+/* Narrow viewports crop deep into the globe, so the artwork reads as one large
+   arc. Easing it back keeps it as texture rather than a stray shape. */
+@media (max-width: 700px) {
+  .hero-bg svg { opacity: 0.72; }
 }
 
 /* Subtle grid overlay — the "signature element" */
 .hero-grid {
   position: absolute;
   inset: 0;
+  z-index: 0;
   background-image:
     linear-gradient(rgba(14,14,14,0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(14,14,14,0.035) 1px, transparent 1px);
   background-size: 80px 80px;
   pointer-events: none;
   mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 40%, transparent 100%);
+}
+
+/* Hero copy sits above .hero-bg / .hero-grid. Required because
+   .reveal.visible clears its transform when the intro finishes. */
+#hero > .hero-kicker,
+#hero > .hero-headline,
+#hero > .hero-sub,
+#hero > .hero-actions {
+  position: relative;
+  z-index: 1;
+}
+
+#hero > .hero-scroll {
+  z-index: 1;
 }
 
 .hero-kicker {
