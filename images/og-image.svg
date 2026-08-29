@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Woolph — Marketing built around doing.</title>
+  <desc>Woolph LLC, Philadelphia PA. Independent marketing strategy, development and digital execution.</desc>
+
+  <defs>
+    <style>
+      .og-bg    { fill: #0E0E0E; }
+      .grid     { stroke: rgba(255,255,255,0.03); stroke-width: 0.75; fill: none; }
+      .glow     { fill: rgba(200,169,110,0.045); }
+      .accent   { fill: #C8A96E; }
+      .corner   { stroke: rgba(200,169,110,0.25); stroke-width: 1.5; fill: none; }
+      .kicker   { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 20px; font-weight: 500; fill: #C8A96E; letter-spacing: 4px; }
+      .wordmark { font-family: Georgia, 'Times New Roman', serif; font-size: 128px; font-weight: 400; fill: #FAFAF8; letter-spacing: -3px; }
+      .dot      { fill: #C8A96E; }
+      .tagline  { font-family: Georgia, 'Times New Roman', serif; font-size: 32px; font-style: italic; fill: rgba(250,250,248,0.5); letter-spacing: 0.5px; }
+      .footer   { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 18px; font-weight: 400; fill: rgba(250,250,248,0.22); letter-spacing: 3px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="og-bg" width="1200" height="630"/>
+
+  <!-- Grid -->
+  <line class="grid" x1="150" y1="0" x2="150" y2="630"/>
+  <line class="grid" x1="300" y1="0" x2="300" y2="630"/>
+  <line class="grid" x1="450" y1="0" x2="450" y2="630"/>
+  <line class="grid" x1="600" y1="0" x2="600" y2="630"/>
+  <line class="grid" x1="750" y1="0" x2="750" y2="630"/>
+  <line class="grid" x1="900" y1="0" x2="900" y2="630"/>
+  <line class="grid" x1="1050" y1="0" x2="1050" y2="630"/>
+  <line class="grid" x1="0" y1="150" x2="1200" y2="150"/>
+  <line class="grid" x1="0" y1="300" x2="1200" y2="300"/>
+  <line class="grid" x1="0" y1="450" x2="1200" y2="450"/>
+
+  <!-- Warm glow -->
+  <ellipse class="glow" cx="1080" cy="120" rx="380" ry="240"/>
+
+  <!-- Corner brackets -->
+  <polyline class="corner" points="100,76  80,76  80,96"/>
+  <polyline class="corner" points="1100,76 1120,76 1120,96"/>
+  <polyline class="corner" points="100,554 80,554 80,534"/>
+  <polyline class="corner" points="1100,554 1120,554 1120,534"/>
+
+  <!-- Kicker -->
+  <text class="kicker" x="88" y="234">INDEPENDENT MARKETING</text>
+
+  <!-- Gold accent rule -->
+  <rect class="accent" x="88" y="252" width="64" height="2.5" rx="1.25"/>
+
+  <!-- Wordmark -->
+  <text x="83" y="408">
+    <tspan class="wordmark">Woolph</tspan><tspan class="wordmark dot" fill="#C8A96E">.</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text class="tagline" x="88" y="468">Marketing built around doing.</text>
+
+  <!-- Footer -->
+  <text class="footer" x="88" y="532">WOOLPH LLC · PHILADELPHIA, PA · WOOLPH.MARKETING</text>
+</svg>
