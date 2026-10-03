@@ -301,13 +301,17 @@ section { padding: var(--section-pad) 0; }
 .pv-yvette     { background: linear-gradient(135deg, #0d0d1a 0%, #1a1a3d 50%, #0d1020 100%); }
 .pv-expat      { background: linear-gradient(135deg, #1c2f1e 0%, #2d5033 60%, #1a4020 100%); }
 .pv-nonprofit  { background: linear-gradient(135deg, #1e1240 0%, #3a1f6e 60%, #281050 100%); }
-.pv-philly     { background: linear-gradient(135deg, #1a1208 0%, #3d2c0a 60%, #2a1c06 100%); }
 .pv-darkchild  { background: linear-gradient(135deg, #0d0d0d 0%, #1a001a 50%, #0d000d 100%); }
 
 .project-visual-inner {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   padding: 2rem;
+}
+.project-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
 }
 .project-mono {
   font-family: 'DM Serif Display', Georgia, serif;
