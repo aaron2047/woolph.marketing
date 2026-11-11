@@ -3,25 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Woolph — Independent marketing strategy, development, and digital execution. Built from Philadelphia." />
+  <title>Woolph Marketing | Philadelphia Web Design &amp; Automation</title>
+  <meta name="description" content="Independent Philadelphia marketing studio building custom websites, booking, and marketing automation for local businesses. One operator, no handoffs." />
+  <link rel="canonical" href="https://woolph.marketing/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0E0E0E" />
 
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Woolph — Marketing Built Around Doing" />
-  <meta property="og:description" content="Independent marketing strategy, development, and digital execution for businesses and ideas that need to get somewhere." />
+  <meta property="og:site_name" content="Woolph Marketing" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Woolph Marketing — Marketing Built Around Doing" />
+  <meta property="og:description" content="Independent Philadelphia marketing studio: custom websites, booking, and marketing automation for businesses that need to get somewhere." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://woolph.marketing" />
+  <meta property="og:url" content="https://woolph.marketing/" />
   <meta property="og:image" content="https://woolph.marketing/images/og-image.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Woolph — Marketing built around doing." />
 
-  <title>Woolph — Marketing Built Around Doing</title>
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Woolph Marketing — Marketing Built Around Doing" />
+  <meta name="twitter:description" content="Independent Philadelphia marketing studio: custom websites, booking, and marketing automation for businesses that need to get somewhere." />
+  <meta name="twitter:image" content="https://woolph.marketing/images/og-image.png" />
+
+  <!-- Structured data: service-area business (no public street address) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://woolph.marketing/#website",
+        "url": "https://woolph.marketing/",
+        "name": "Woolph Marketing",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://woolph.marketing/#business" }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://woolph.marketing/#business",
+        "name": "Woolph Marketing",
+        "alternateName": ["Woolph", "Woolph LLC"],
+        "legalName": "Woolph LLC",
+        "url": "https://woolph.marketing/",
+        "image": "https://woolph.marketing/images/og-image.png",
+        "description": "Independent Philadelphia marketing studio building custom websites, online booking, and marketing automation for local businesses, nonprofits, and personal brands.",
+        "telephone": "+1-215-989-3221",
+        "email": "woolphllc@gmail.com",
+        "foundingDate": "2020",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Philadelphia",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Philadelphia" },
+          { "@type": "State", "name": "Pennsylvania" }
+        ],
+        "founder": {
+          "@type": "Person",
+          "@id": "https://woolph.marketing/#aaron-williams",
+          "name": "Aaron Williams",
+          "sameAs": ["https://www.linkedin.com/in/aaron-williams-388862427"]
+        },
+        "knowsAbout": [
+          "Web design",
+          "Marketing automation",
+          "GoHighLevel",
+          "Local SEO",
+          "Shopify",
+          "Email marketing"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Woolph Marketing services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website & landing page design", "url": "https://woolph.marketing/services/web-design-philadelphia/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing automation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lead generation" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reputation management" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social media management" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Email campaigns" } }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
@@ -174,11 +252,11 @@
         <!-- BullForce — FEATURED -->
         <article class="project-card featured reveal reveal-delay-1">
           <div class="project-visual pv-bullforce">
-            <img src="images/bullforce-card.jpg" alt="BullForce Powerwash platform screenshot" class="project-img" />
-            <span class="project-badge">Platform · Live</span>
+            <img src="images/bullforce-card.jpg" alt="BullForce Powerwash training and job-placement platform homepage" class="project-img" width="1600" height="900" loading="lazy" decoding="async" />
           </div>
           <div class="project-body">
             <div class="project-meta">
+              <span class="project-badge">Platform · Live</span>
               <div class="project-tags">
                 <span class="project-tag">Workforce Dev</span>
                 <span class="project-tag">GitHub · Netlify</span>
@@ -201,12 +279,12 @@
         <!-- Talon Nail Bar — SECONDARY -->
         <article class="project-card secondary reveal reveal-delay-2">
           <div class="project-visual pv-talon">
-            <img src="images/talon-card.jpg" alt="Talon Nail Bar website hero section" class="project-img" />
-            <span class="project-badge">Client · Live</span>
+            <img src="images/talon-card.jpg" alt="Talon Nail Bar website hero with online booking for a Queen Village, Philadelphia studio" class="project-img" width="1218" height="914" loading="lazy" decoding="async" />
             <span class="project-result">Best of Philly 2025</span>
           </div>
           <div class="project-body">
             <div class="project-meta">
+              <span class="project-badge">Client · Live</span>
               <div class="project-tags">
                 <span class="project-tag">Website</span>
                 <span class="project-tag">Booking</span>
@@ -229,11 +307,11 @@
         <!-- Yvette Wilks — TERTIARY -->
         <article class="project-card tertiary reveal reveal-delay-1">
           <div class="project-visual pv-yvette">
-            <img src="images/yvette-card.jpg" alt="Yvette Wilks Media website hero section" class="project-img" />
-            <span class="project-badge">Client · Live</span>
+            <img src="images/yvette-card.jpg" alt="Yvette Wilks Media personal brand website hero" class="project-img" width="1226" height="920" loading="lazy" decoding="async" />
           </div>
           <div class="project-body">
             <div class="project-meta">
+              <span class="project-badge">Client · Live</span>
               <div class="project-tags">
                 <span class="project-tag">Media · Press</span>
                 <span class="project-tag">Personal Brand</span>
@@ -256,12 +334,12 @@
         <!-- Expat Blueprint — TERTIARY -->
         <article class="project-card tertiary reveal reveal-delay-2">
           <div class="project-visual pv-expat">
-            <img src="images/expat-card.jpg" alt="Expat Blueprint Guide product screenshot" class="project-img project-img--left" />
-            <span class="project-badge">Product · Live</span>
+            <img src="images/expat-card.jpg" alt="The Expat Blueprint Guide landing page with visa score calculator" class="project-img project-img--left" width="1200" height="675" loading="lazy" decoding="async" />
             <span class="project-result">30 Countries</span>
           </div>
           <div class="project-body">
             <div class="project-meta">
+              <span class="project-badge">Product · Live</span>
               <div class="project-tags">
                 <span class="project-tag">Shopify</span>
                 <span class="project-tag">AI Tool</span>
@@ -280,12 +358,12 @@
         <!-- Children of Paradise — TERTIARY -->
         <article class="project-card tertiary reveal reveal-delay-1">
           <div class="project-visual pv-nonprofit">
-            <img src="images/cop-card.jpg" alt="Children of Paradise Inc. website screenshot" class="project-img project-img--left" />
-            <span class="project-badge">Nonprofit · Live</span>
+            <img src="images/cop-card.jpg" alt="Children of Paradise Inc. nonprofit website homepage" class="project-img project-img--left" width="1200" height="675" loading="lazy" decoding="async" />
             <span class="project-result">+33% Donations</span>
           </div>
           <div class="project-body">
             <div class="project-meta">
+              <span class="project-badge">Nonprofit · Live</span>
               <div class="project-tags">
                 <span class="project-tag">Website Rebuild</span>
                 <span class="project-tag">GitHub</span>
@@ -298,21 +376,27 @@
               Philadelphia nonprofit — resulting in a 33% increase in total donations.
               Built a self-editable workflow so staff manage their own content.
             </p>
-            <a href="https://childrenofparadiseinc.org" target="_blank" rel="noopener" class="project-link">
-              View project
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
-            </a>
+            <div class="project-links">
+              <a href="/work/children-of-paradise/" class="project-link">
+                Read case study
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://childrenofparadiseinc.org" target="_blank" rel="noopener" class="project-link">
+                View live site
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
           </div>
         </article>
 
         <!-- Ms. Darkchild — TERTIARY -->
         <article class="project-card tertiary reveal reveal-delay-1">
           <div class="project-visual pv-darkchild">
-            <img src="images/darkchild-card.jpg" alt="Ms. Darkchild comedy brand site screenshot" class="project-img" />
-            <span class="project-badge">Client · Live</span>
+            <img src="images/darkchild-card.jpg" alt="Ms. Darkchild comedy brand website hero" class="project-img" width="1200" height="675" loading="lazy" decoding="async" />
           </div>
           <div class="project-body">
             <div class="project-meta">
+              <span class="project-badge">Client · Live</span>
               <div class="project-tags">
                 <span class="project-tag">Comedy · Entertainment</span>
                 <span class="project-tag">Self-Serve CMS</span>
@@ -459,6 +543,10 @@
             <li>Booking &amp; contact integration</li>
             <li>Hosting &amp; maintenance</li>
           </ul>
+          <a href="/services/web-design-philadelphia/" class="project-link service-more">
+            Philadelphia website design
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
 
         <div class="service-card reveal reveal-delay-2">
@@ -691,6 +779,7 @@
       <ul class="footer-links" role="list">
         <li><a href="#work">Work</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="/services/web-design-philadelphia/">Web design</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
